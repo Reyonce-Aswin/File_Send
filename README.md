@@ -35,7 +35,7 @@ sudo apt install ./filesend_1.0_amd64.deb
 ### Option 2: Build from source
 
 ```bash
-git clone https://github.com/yourusername/filesend.git
+git clone https://github.com/Reyonce-Aswin/filesend.git
 cd filesend
 make
 sudo make install
