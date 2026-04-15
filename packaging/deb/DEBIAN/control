@@ -1,0 +1,8 @@
+Package: filesend
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Your Name <your@email.com>
+Description: Terminal-based file transfer tool over LAN
+Depends: libncursesw6
