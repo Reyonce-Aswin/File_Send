@@ -50,11 +50,20 @@ void get_config_path(char *path)
 
     // ~/.config
     snprintf(dir, sizeof(dir), "%s/.config", home);
-    mkdir(dir, 0755);
+    
+    #ifdef _WIN32
+        mkdir(dir);
+    #else
+        mkdir(dir, 0755);
+    #endif
 
     // ~/.config/filesend
     snprintf(dir, sizeof(dir), "%s/.config/filesend", home);
-    mkdir(dir, 0755);
+    #ifdef _WIN32
+        mkdir(dir);
+    #else
+        mkdir(dir, 0755);
+    #endif
 
     // final file path
     snprintf(path, MAX_PATH, "%s/.config/filesend/config", home);
